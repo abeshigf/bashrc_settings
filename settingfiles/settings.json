@@ -1,0 +1,43 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.cwd": "/home/fknims/vscode",
+    "python.analysis.extraPaths": [
+        "/home/fknims/vscode/localcode/pptx-python/.venv/lib/python3.10/site-packages"
+    ],
+    "python.autoComplete.extraPaths": [
+        "/home/fknims/vscode/localcode/pptx-python/.venv/lib/python3.10/site-packages"
+    ],
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true
+    },
+    "black-formatter.args": [
+        "--line-length=119"
+    ],
+    "python.linting.flake8Enabled": true,
+    "flake8.args": [
+        "--ignore=E203,W503,W504",
+        "--max-line-length=119"
+    ],
+    "isort.check": true,
+    "isort.args": [
+        "--profile = black",
+        "--line_length = 119"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "markdownlint.config": {
+        "default": true,
+        "MD007": {
+            "indent": 4
+        },
+        "MD024": {
+            "siblings_only": true
+        },
+        "MD033": false
+    }
+}
